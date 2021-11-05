@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare": "husky install",
     "test": "jest --watch",
     "test:staged": "jest --passWithNoTests"
   },
@@ -20,7 +21,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.1",
     "git-commit-msg-linter": "^3.2.8",
-    "husky": "^7.0.4",
+    "husky": "^7.0.0",
     "jest": "^27.3.1",
     "lint-staged": "^11.2.6",
     "ts-jest": "^27.0.7",
