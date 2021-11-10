@@ -1,6 +1,6 @@
 import { Collection, MongoClient } from 'mongodb'
 
-const MONGO_URL = process.env.MONGO_URL ?? ''
+export const MONGO_URL = process.env.MONGO_URL ?? ''
 
 export const MongoHelper = {
   client: null as unknown as MongoClient,
