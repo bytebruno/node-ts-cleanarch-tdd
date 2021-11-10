@@ -1,11 +1,11 @@
-import { MONGO_URL, MongoHelper } from '../../infra/db/mongodb/helpers/mongo-helper'
-
+import { MongoHelper } from '../../infra/db/mongodb/helpers/mongo-helper'
 import app from '../config/app'
+import env from '../config/env'
 import request from 'supertest'
 
 describe('SignUp Routes', () => {
   beforeAll(async () => {
-    await MongoHelper.connect(MONGO_URL)
+    await MongoHelper.connect(env.mongoUrl)
   })
 
   afterAll(async () => {
